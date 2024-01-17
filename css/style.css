@@ -77,19 +77,11 @@ a{
     font-weight: 400;
     line-height: 26px;
 }
-/* .btn{
-    position: relative;
-    background-color: rgba(255, 255, 255, 0.30);
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 10;
-    min-width: 1%;
-    top: -30px;
-} */
+
 .btn > input{
     border: none;
     padding: 13px;
     border-radius: 5px;
-    /* gap: 24px; */
     margin: 0px 15px;
 }
 
@@ -100,8 +92,6 @@ a{
     height: 550px;
     display: flex;
     gap: 55px;
-    /* display: grid;
-    grid-template-columns: repeat(2, 1fr); */
 }
 .pop-left{
     width: 50%;
@@ -133,12 +123,14 @@ a{
 
 
 /* #########-----Choose Your Destination Section css------######### */
-.destination{
+.container > .destination{
     margin-top: 100px;
+    height: 1080px;
 }
 .destination-title{
+    /* width: 100%; */
 }
-    .destination-title h1{
+.destination-title h1{
     text-align: center;
     font-size: 2.5rem;
     font-weight: 800;
@@ -150,7 +142,7 @@ a{
 }
 .gallery-one{
     margin-top: 24px;
-    height: 300px;
+    /* height: 300px; */
     display: flex;
     justify-content: space-between;
 }
@@ -158,16 +150,18 @@ a{
     width: 49.3%;
 }
 .two-gallery{
-    height: 300px;
+    /* height: 300px; */
     margin-top: 15px;
     display: flex;
     justify-content: space-between;
+    width: 100%;
 }
 .gallery-three{
     margin-top: 15px;
     display: flex;
-    height: 300px;
+    /* height: 300px; */
     justify-content: space-between;
+    width: 100%;
 }
 
 
@@ -175,7 +169,7 @@ a{
 
 /* #########-----why choose us Section css------######### */
 .choose{
-    margin-top: 100px;
+    margin-top: 200px;
 }
 .choose-title h1{
     color: #131318;
@@ -223,9 +217,110 @@ a{
     justify-content: center;
     align-items: center;
 }
-.last-box
 
 
+
+
+/* #########-----newsletter Section css------######### */
+.newsletter{
+    margin-top: 100px;
+    height: 430px;
+    /* border: 2px solid brown; */
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+}
+.left-form{
+    width: 100%;
+    border: 1px solid sandybrown;
+    border-radius: 13px;
+    padding: 20px;
+}
+.left-form h3{
+    color: #131318;
+    font-family: Mulish;
+    font-size: 1.8rem;
+    font-weight: 800;
+}
+.left-form p{
+    color: #5A5A5D;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+}
+.gap-fill{
+    margin-top: 48px;
+}
+.gap-fill > input{
+    display: block;
+    padding: 20px 100px;
+    border-radius: 8px;
+    border: none;
+    background: rgba(19, 19, 24, 0.05);
+    margin: 30px 0px;
+}
+.save-img img{
+    height: 100%; 
+}
+.subs{
+    padding: 20px 147px;
+    border-radius: 8px;
+    border: none;
+    background-color: #FF5400;
+    color: #FFF;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+
+
+
+/* #########-----  Footer Section css------######### */
+.footer{
+    background: rgba(19, 19, 24, 0.05);
+    height: 500px;
+}
+.f-title{
+    padding-top: 110px;
+    margin-top: 100px;
+}
+.f-title > p{
+    color: #5A5A5D;
+    font-size: 1rem;
+    font-weight: 400;
+}
+.f-heading{
+    display: flex;
+    justify-content: center;
+}
+.f-heading > h1{
+    font-size: 2rem;
+    font-weight: 800;
+}
+.icons-list{
+    display: flex;
+    justify-content: center;
+}
+.icons-list > ul > li{
+    list-style: none;
+}
+.icons-list > ul > li > a{
+    text-decoration: none;
+    height: 24px;
+}
+.icons-list > ul > li > a > i{
+    color: #131318;
+    font-size: 2rem;
+    padding: 24px;
+}
+.copy-right > p{
+    margin: 100px auto;
+    color: #131318;
+    font-size: 1rem;
+    font-weight: 300;
+}
 
 
 
@@ -234,48 +329,21 @@ a{
 
 
             /* this is small screen  */
-
-
-/* ######This is header section###### */
 @media screen and (max-width: 600px) {
-    
+    .navbar{
+        flex-direction: column;
+        } 
+    .banner-title{
+        margin-top: 0px;
+    }
+    .banner-title p{
+        margin-top: 0px;
+    }
+    .banner-items{
+        align-content: space-around;
+    }
+    .popular-section{
+        flex-direction: column;
+        align-items: center;
+    }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .destination-title h1{
-    text-align: center;
-    font-size: 2.5rem;
-    font-weight: 800;
-}
-.destination-title p{
-    margin-top: 24px;
-    align-items: center;
-    font-size: 1rem;
-}
-.gallery-one{
-    display: grid;
-    grid-template-columns: 49.5% 49.5%;
-    gap: 10px;
-}
-.gallery-one img{
-    width: 100%;
-    height: 100%;
-}
-.gallery-two{
-    display: grid;
-    grid-template-columns: 30% 40% 30%;
-    gap: 10px;
-} */
